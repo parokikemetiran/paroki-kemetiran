@@ -4,8 +4,8 @@
       <NuxtLink to="/" class="text-xl font-semibold tracking-tight">
         {{ $prismic.asText(settings.data.siteTitle) }}
       </NuxtLink>
-      <nav>
-        <ul class="flex flex-wrap gap-6 md:gap-10">
+      <nav class="w-full">
+        <ul class="flex flex-wrap justify-around gap-6 md:gap-10">
           <li
             v-for="item in navigation.data.links"
             :key="$prismic.asText(item.label)"

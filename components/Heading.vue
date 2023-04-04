@@ -3,10 +3,10 @@
     :is="as"
     class="font-semibold leading-tight tracking-tight md:leading-tight"
     :class="{
-      'text-5xl md:text-7xl': size === 'xl',
-      'text-4xl md:text-5xl': size === 'lg',
-      'text-3xl md:text-4xl': size === 'md',
-      'text-xl md:text-2xl': size === 'sm',
+      'text-4xl md:text-5xl': size === 'xl',
+      'text-2xl md:text-4xl': size === 'lg',
+      'text-xl md:text-2xl': size === 'md',
+      'text-lg md:text-xl': size === 'sm',
     }"
   >
     <slot />
