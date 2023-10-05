@@ -1,11 +1,15 @@
 <template>
   <div class="text-slate-800">
-    <Header
+    <Navbar
       v-if="navigation.data && settings.data"
       :navigation="navigation"
       :settings="settings"
     />
     <main><nuxt /></main>
+    <Footer
+    v-if="navigation.data"
+      :navigation="navigation"
+    />
   </div>
 </template>
 
